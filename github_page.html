@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>
+        Magnus Github
+    </title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" class="png" href="favicon.svg">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="search_bar.css">
+    <style>
+        .container{
+            width: 500px;
+            height: 375px;
+            border: 10px solid #333; 
+            margin: 0px auto;
+            margin-top: 20px;
+        }
+
+        #videoElement{
+            width: 500px;
+            height: 375px;
+            background-color: #666;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <input class="search">
+
+    <div>
+        <nav>
+            <a href="C:\Users\magnu\OneDrive\AalborgDokumenter\GitHub\webpage\index.html">home</a>
+            <a href="#">github</a>
+            <a href="C:\Users\magnu\OneDrive\AalborgDokumenter\GitHub\webpage\damsgaard.html">damsgaard</a>
+            <a href="C:\Users\magnu\OneDrive\AalborgDokumenter\GitHub\webpage\projects.html">projects</a>
+            <a href="C:\Users\magnu\OneDrive\AalborgDokumenter\GitHub\webpage\contact.html">contact</a>
+            <div class="animation start-github"></div>
+        </nav>
+    </div>
+
+    
+
+    <div class="container">
+        <video id="videoElement" autoplay="true" video()></video>
+    </div>
+    
+
+
+    <script>    
+        let video = document.querySelector("#videoElement");
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video:  true })
+                .then(function (stream) {
+                    video.srcObject = stream; 
+                })
+                .catch (function (error) {
+                    console.log("Something went wrong!")
+                })
+        } else {
+            console.log("getUserMedia not supported")
+        }
+    </script>
+    
+</body>
+</html>

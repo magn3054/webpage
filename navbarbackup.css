@@ -1,0 +1,90 @@
+:root {  /* W */
+    --firstW: 20%; --firstL: 0px;
+    --secondW: 20%; --secondL: calc(var(--firstW) + var(--firstL)); 
+    --thirdW: 20%; --thirdL: calc(var(--secondW) + var(--secondL));
+    --fourthW: 20%; --fourthL: calc(var(--thirdW) + var(--thirdL));
+    --fifthW: 20%; --fifthL: calc(var(--fourthW) + var(--fourthL));
+}
+
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1){
+    width: var(--firstW);
+}
+a:nth-child(2){
+    width: var(--secondW);
+}
+a:nth-child(3){
+    width: var(--thirdW);
+}
+a:nth-child(4){
+    width: var(--fourthW);
+}
+a:nth-child(5){
+    width: var(--fifthW);
+}
+
+nav .start-home, a:nth-child(1):hover~.animation{
+    width: var(--firstW);
+    left: var(--firstL);
+    background-color: #ff0000;
+}
+nav .start-empty, a:nth-child(2):hover~.animation{
+    width: var(--secondW);
+    left: var(--secondL);
+    background-color: #6a07db;
+}
+nav .start-streaming, a:nth-child(3):hover~.animation{
+    width: var(--thirdW);
+    left: var(--thirdL);
+    background-color: #3498db;
+}
+nav .start-project, a:nth-child(4):hover~.animation{
+    width: var(--fourthW);
+    left: var(--fourthL);
+    background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation{
+    width: var(--fifthW);
+    left: var(--fifthL);
+    background-color: #e67e22;
+}
+
+body {
+    background-color: lightgrey;
+    max-width: none;
+    margin: 20px;
+
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+}
