@@ -25,10 +25,10 @@
             margin-top: 1vh;
         }
 
-        #videoElement1{
+        #videoElement{
             width: 500px;
             height: 375px;
-            background-color: rgb(0, 240, 60);
+            background-color: #333;
         }
 
     </style>
@@ -56,7 +56,7 @@
     </div>
     
     <div class="container2">
-        <video id="videoElement2" autoplay="true" ></video>
+        <video id="videoElement" autoplay="true" ></video>
     </div>
 
 
@@ -75,14 +75,14 @@
             console.log("getUserMedia not supported")
         }
     </script>
-<!-- 
+
     <script>    
         let video2 = document.querySelector("#videoElement");
 
         if (navigator.mediaDevices.getUserMedia) {
             navigator.mediaDevices.getUserMedia({ video: {facingMode: {exact: environment} }})
-                .then(function (stream2) {
-                    video2.srcObject = stream2; 
+                .then(function (stream) {
+                    video2.srcObject = stream; 
                 })
                 .catch (function (error) {
                     console.log("Something went wrong!")
@@ -91,6 +91,6 @@
             console.log("getUserMedia not supported")
         }
     </script>
-     -->
+    
 </body>
 </html>
