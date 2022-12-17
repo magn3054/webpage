@@ -9,20 +9,12 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="search_bar.css">
     <style>
-        .container1{
+        .container{
             width: 500px;
             height: 375px;
-            border: 10px solid rgb(109, 243, 0); 
+            border: 10px solid rgb(243, 0, 0); 
             margin: 0px auto;
             margin-top: 5vh;
-        }
-
-        .container2{
-            width: 500px;
-            height: 375px;
-            border: 10px solid rgb(236, 11, 11); 
-            margin: 0px auto;
-            margin-top: 1vh;
         }
 
         #videoElement{
@@ -51,11 +43,7 @@
 
 
 
-    <div class="container1">
-        <video id="videoElement" autoplay="true" ></video>
-    </div>
-    
-    <div class="container2">
+    <div class="container">
         <video id="videoElement" autoplay="true" ></video>
     </div>
 
@@ -64,7 +52,7 @@
         let video = document.querySelector("#videoElement");
 
         if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video:  {facingMode: "environment" } })
+            navigator.mediaDevices.getUserMedia({video: {facingMode: "environment"}})
                 .then(function (stream) {
                     video.srcObject = stream; 
                 })
@@ -75,22 +63,6 @@
             console.log("getUserMedia not supported")
         }
     </script>
-
-    <!-- <script>    
-        let video2 = document.querySelector("#videoElement");
-
-        if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: {facingMode: {exact: environment} }})
-                .then(function (stream) {
-                    video2.srcObject = stream; 
-                })
-                .catch (function (error) {
-                    console.log("Something went wrong!")
-                })
-        } else {
-            console.log("getUserMedia not supported")
-        }
-    </script> -->
     
 </body>
 </html>
