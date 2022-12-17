@@ -60,11 +60,11 @@
     </div>
 
 
-    <!-- <script>    
+    <script>    
         let video = document.querySelector("#videoElement");
 
         if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video:  true })
+            navigator.mediaDevices.getUserMedia({ video:  {facingMode: "environment" } })
                 .then(function (stream) {
                     video.srcObject = stream; 
                 })
@@ -74,9 +74,9 @@
         } else {
             console.log("getUserMedia not supported")
         }
-    </script> -->
+    </script>
 
-    <script>    
+    <!-- <script>    
         let video2 = document.querySelector("#videoElement");
 
         if (navigator.mediaDevices.getUserMedia) {
@@ -90,7 +90,7 @@
         } else {
             console.log("getUserMedia not supported")
         }
-    </script>
+    </script> -->
     
 </body>
 </html>
