@@ -14,7 +14,7 @@
     overflow: hidden;
     background: url(search-white.svg) no-repeat; 
     background-size: 22px;
-    background-position: 45% 50%; 
+    background-position: 45% 50%;     
 }
 
 .search:hover {
@@ -24,7 +24,7 @@
 .search:focus {
     left: 80%;
     width: 15%;
-    border-radius: 0%;
+    border-radius: 20px;
     cursor: text;
     text-align: left;
     color: white;

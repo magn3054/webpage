@@ -1,4 +1,4 @@
-:root {  /* W */
+:root {  
     --firstW: 20%; --firstL: 0px;
     --secondW: 20%; --secondL: calc(var(--firstW) + var(--firstL)); 
     --thirdW: 20%; --thirdL: calc(var(--secondW) + var(--secondL));
@@ -63,10 +63,10 @@ nav .start-github, a:nth-child(2):hover~.animation{
     left: var(--secondL);
     background-color: #6a07db;
 }
-nav .start-damsgaard, a:nth-child(3):hover~.animation{
+nav .start-CV, a:nth-child(3):hover~.animation{
     width: var(--thirdW);
     left: var(--thirdL);
-    background-color: #3498db;
+    background-color: #0070c0;
 }
 nav .start-projects, a:nth-child(4):hover~.animation{
     width: var(--fourthW);
@@ -80,10 +80,12 @@ nav .start-contact, a:nth-child(5):hover~.animation{
 }
 
 body {
-    background-color: lightgrey;
-    max-width: none;
-    margin: 20px;
+    max-width: 100vw;
+    margin: 0;
+    padding: 20px;
     font-size: 12px;
     font-family: sans-serif;
     background: #2c3e50;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
