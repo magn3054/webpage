@@ -1,29 +1,52 @@
-.cv-box {
-    width: 60%;
-    height: auto;
+.container {
+    float: left;
+    padding: 10px;
     margin-top: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-radius: 30px;
+    max-height: auto;
+}
+  
+.mid {
+    width: 60%;
+    /* background-color: green; */
+}
 
-    /* border: red solid; */
+.side {
+    width: 20%;
+    height: 150vh;
+    /* background-color: red; */
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.cv-box {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    /* border: red solid;  */
 }
 
 .qr-box1 {
-    width: 18%; 
+    width: 80%; 
     height: auto; 
     margin-top: 10px;
     position: sticky; 
     top: 0;
-
+    float: left;
+    transform: translate(10%,0);
     /* border: red solid; */
 }
 
 .qr-box2 {
     width: 100%; 
     height: auto;
-    box-sizing: border-box;
 
     /* border: green solid; */
 }
@@ -32,7 +55,6 @@
     color: white; 
     text-align: center;
     font-size: 28px;
-    box-sizing: border-box;
 
-    /* border: red solid; */
+    /* border: purple solid; */
 }

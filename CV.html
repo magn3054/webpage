@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="search_bar.css">
     <link rel="stylesheet" href="cv.css">
+
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,15 +31,31 @@
         </nav>
     </div>
 
-    <a href="CVpdf.pdf" target="_blank">
-            <img class="cv-box" src="CVimg.jpg" alt="CV-PDF" > 
-    </a>
     
-    <div class="qr-box1">
-        <a href="https://linkedin.com/in/magnus-christiansen">
-            <img class="qr-box2" src="linkedInQR.svg" alt="LinkedIn QR-code">
-        </a>
-        <div class="clickme">Scan or click me!</div>
+<div class="row">   
+    <div class="container side">
+        <div class="qr-box1">
+            <a href="https://linkedin.com/in/magnus-christiansen">
+                <img class="qr-box2" src="linkedInQR.svg" alt="LinkedIn QR-code">
+            </a>
+            <div class="clickme">Scan or click me!</div>
+        </div>
     </div>
+  
+    <div class="container mid">
+        <!-- <a href="CVpdf.pdf" target="_blank"> -->
+            <img class="cv-box" src="CVimg.jpg" alt="CV-PDF"> 
+        <!-- </a> -->
+    </div>
+  
+    <div class="container side">
+        
+    </div>
+</div> 
+
+    
+
+
+    
 </body>
 </html>

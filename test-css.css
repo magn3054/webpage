@@ -1,0 +1,21 @@
+.container {
+    float: left;
+    padding: 10px;
+    height: 100vh
+  }
+
+.side, .side2 {
+    width: 25%;
+    height: 100vh;
+}
+
+.mid {
+    width: 50%;
+    height: 100vh;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
