@@ -41,14 +41,15 @@
     top: 0;
     float: left;
     transform: translate(10%,0);
-    /* border: red solid; */
+    border: red solid;
 }
 
 .qr-box2 {
     width: 100%; 
     height: auto;
+    max-height: 100%;
 
-    /* border: green solid; */
+    border: green solid;
 }
 
 .clickme {
@@ -56,5 +57,5 @@
     text-align: center;
     font-size: 28px;
 
-    /* border: purple solid; */
+    border: purple solid;
 }
