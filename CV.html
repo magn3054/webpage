@@ -1,13 +1,15 @@
 <!DOCTYPE html> 
 <html> 
-<head> 
+<head lang="en"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Magnus Damsgaard
     </title> 
-    <link rel="website icon" class="png" href="beard.svg">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="search_bar.css">
-    <link rel="stylesheet" href="cv.css">
+    <link rel="website icon" class="png" href="img/beard.svg">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/search_bar.css">
+    <link rel="stylesheet" href="css/cv.css">
 
     <style>
         * {
@@ -17,26 +19,26 @@
 </head>
 
 <body>
+    <header>
+        <input class="search">
 
-    <input class="search">
-
-    <div>
-        <nav>
-            <a href="https://magn3054.github.io/webpage/index.html">home</a>
-            <a href="https://magn3054.github.io/webpage/github_page.html">github</a>
-            <a href="#">CV</a>
-            <a href="https://magn3054.github.io/webpage/projects.html">projects</a>
-            <a href="https://magn3054.github.io/webpage/contact.html">contact</a>
-            <div class="animation start-CV"></div>
-        </nav>
-    </div>
-
+        <div>
+            <nav>
+                <a href="https://magn3054.github.io/webpage/index.html">home</a>
+                <a href="https://magn3054.github.io/webpage/github_page.html">github</a>
+                <a href="#">contact</a>
+                <a href="https://magn3054.github.io/webpage/projects.html">projects</a>
+                <a href="https://magn3054.github.io/webpage/contact.html">definitions</a>
+                <div class="animation start-CV"></div>
+            </nav>
+        </div>
+    </header>
     
 <div class="row">   
     <div class="container side">
         <div class="qr-box1">
             <a href="https://linkedin.com/in/magnus-christiansen">
-                <img class="qr-box2" src="linkedInQR.svg" alt="LinkedIn QR-code">
+                <img class="qr-box2" src="img/linkedInQR.svg" alt="LinkedIn QR-code">
             </a>
             <div class="clickme">Scan or click me!</div>
         </div>
@@ -44,7 +46,7 @@
   
     <div class="container mid">
         <!-- <a href="CVpdf.pdf" target="_blank"> -->
-            <img class="cv-box" src="CVimg.jpg" alt="CV-PDF"> 
+            <img class="cv-box" src="img/CVimg.jpg" alt="CV-PDF"> 
         <!-- </a> -->
     </div>
   

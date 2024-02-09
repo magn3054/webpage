@@ -12,7 +12,7 @@
     font-size: 15px;
     border: 1px solid #FF9950;
     overflow: hidden;
-    background: url(search-white.svg) no-repeat; 
+    background: url(../img/search-white.svg) no-repeat; 
     background-size: 22px;
     background-position: 45% 50%;     
 }
@@ -30,7 +30,7 @@
     color: white;
     outline: none;
     border: 1px solid #35ee07;
-    background: url(search-white.svg) no-repeat;
+    background: url(../img/search-white.svg) no-repeat;
     background-size: 22px;
     background-position: 98% 50%;
 }

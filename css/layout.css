@@ -1,0 +1,51 @@
+article {
+  display: grid;
+  grid-template-areas:
+    'left middle right';
+  gap: 10px;
+  /* background-color: #2196F3; */
+  margin-top: 20px;
+  padding: 10px;
+}
+
+h1>mark{
+  background-color: rgb(0, 0, 255);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  padding: 5px;
+  margin-left: -2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 4px 2px 25px grey;
+}
+
+dt:not(:first-child){border-top: dotted black 1px; padding-top: 10px;}
+dt{
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+dd{
+  margin-bottom: 20px;
+}
+
+section{
+  background-color: white;
+  border: 2px black solid;
+  color: black;
+  padding: 2px;
+}
+
+section.left{
+    grid-area: left;
+}
+
+section.mid{
+    grid-area: middle;
+}
+
+section.right{
+    grid-area: right;
+}
+

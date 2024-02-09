@@ -1,13 +1,15 @@
 <!DOCTYPE html> 
 <html> 
-<head> 
+<head lang="en"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Magnus Github
     </title> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" class="png" href="beard.svg">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="search_bar.css">
+    <link rel="website icon" class="png" href="img/beard.svg">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/search_bar.css">
     <style>
         .container{
             width: 500px;
@@ -28,25 +30,43 @@
 
 <body>
 
-    <input class="search">
+    <header>
+        <input class="search">
 
-    <div>
-        <nav>
-            <a href="https://magn3054.github.io/webpage/index.html">home</a>
-            <a href="#">github</a>
-            <a href="https://magn3054.github.io/webpage/CV.html">CV</a>
-            <a href="https://magn3054.github.io/webpage/projects.html">projects</a>
-            <a href="https://magn3054.github.io/webpage/contact.html">contact</a>
-            <div class="animation start-github"></div>
-        </nav>
-    </div>
-
+        <div>
+            <nav>
+                <a href="https://magn3054.github.io/webpage/index.html">home</a>
+                <a href="#">github</a>
+                <a href="https://magn3054.github.io/webpage/CV.html">contact</a>
+                <a href="https://magn3054.github.io/webpage/projects.html">projects</a>
+                <a href="https://magn3054.github.io/webpage/contact.html">definitions</a>
+                <div class="animation start-github"></div>
+            </nav>
+        </div>
+    </header>
 
 
     <div class="container">
         <video id="videoElement" autoplay="true" ></video>
     </div>
 
+    <!-- <table style="color: white;">  
+        <thead><td>Cameras</td></thead>
+        <tbody>
+            <tr>
+                <td>Camera 1 |</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Camera 2 |</td>
+                <td>OBS Cam</td>
+            </tr>
+            <tr>
+                <td>Camera 3 |</td>
+                <td>N/A</td>
+            </tr>
+        </tbody>
+    </table> -->
 
     <script>    
         let video = document.querySelector("#videoElement");
